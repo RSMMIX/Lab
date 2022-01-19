@@ -26,16 +26,5 @@ public class Pro5_64010726 {
             // End line
             System.out.println();
         }
-
-        // Display pyramid
-        /*
-         * for (int row = 0; row < num_lines; row++) {
-         * System.out.print("  ".repeat(num_lines - row - 1));
-         * for (int i = row; i >= -row; i--) { //print number from row to -row
-         * System.out.print((Math.abs(i) + 1) + " ");
-         * }
-         * System.out.println(); // End line
-         * }
-         */
     }
 }

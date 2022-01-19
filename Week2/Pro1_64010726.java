@@ -1,4 +1,3 @@
-package Week2;
 import java.util.Scanner;
 
 public class Pro1_64010726 {
