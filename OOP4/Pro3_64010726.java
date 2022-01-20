@@ -78,6 +78,7 @@ public class Pro3_64010726 {
         System.out.println("PalindromePrime created.");
         System.out.println("The palindromPrime stopwatch stoped.");
         
+        
         // System.out.printf("The palindromPrime time is %.1f milliseconds.",stopWatch.getElapsedTime());
         }
     }
