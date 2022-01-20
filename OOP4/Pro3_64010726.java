@@ -10,13 +10,14 @@ public class Pro3_64010726 {
     }
 
     static boolean isPalindrome(int n) {
+        int a = n;
         int number = 0;
         while (n > 0) {
             number *= 10;
             number += n % 10;
             n /= 10;
         }
-        return (n == number);
+        return (a == number);
     }
 
     public static void selectionSort(double[] arr) {
@@ -37,18 +38,18 @@ public class Pro3_64010726 {
         System.out.println("Creating a list containing 1000 elements,");
         double[] arr = new double[1000];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = Math.random()*1000;
+            arr[i] = Math.random() * 1000;
         }
         for (int i = 0; i < 10; i++) {
-            System.out.printf("%10.2f",arr[i]);
-            if ((i+1) % 5 == 0) {
+            System.out.printf("%10.2f", arr[i]);
+            if ((i + 1) % 5 == 0) {
                 System.out.println();
             }
         }
         System.out.println("    ...");
         for (int i = 990; i < 1000; i++) {
-            System.out.printf("%10.2f",arr[i]);
-            if ((i+1) % 5 == 0) {
+            System.out.printf("%10.2f", arr[i]);
+            if ((i + 1) % 5 == 0) {
                 System.out.println();
             }
         }
@@ -58,31 +59,44 @@ public class Pro3_64010726 {
         selectionSort(arr);
         stopWatch.stop();
         for (int i = 0; i < 10; i++) {
-            System.out.printf("%10.2f",arr[i]);
-            if ((i+1) % 5 == 0) {
+            System.out.printf("%10.2f", arr[i]);
+            if ((i + 1) % 5 == 0) {
                 System.out.println();
             }
         }
         System.out.println("      ...");
         for (int i = 995; i < 1000; i++) {
-            System.out.printf("%10.2f",arr[i]);
-            if ((i+1) % 5 == 0) {
+            System.out.printf("%10.2f", arr[i]);
+            if ((i + 1) % 5 == 0) {
                 System.out.println();
             }
         }
         System.out.println("Sorting stopwatch stoped.");
-        System.out.printf("The sort time is %.1f milliseconds.\n",stopWatch.getElapsedTime());
+        System.out.printf("The sort time is %.1f milliseconds.\n", stopWatch.getElapsedTime());
         System.out.println("------------------------------------------------------------");
         System.out.println("The palindromPrime stopwatch starts...");
         System.out.println("Creating 1000 PalindromPrime...");
+
+        stopWatch.start();
+        int count = 0;
+        for (int i = 0; count < 1000; i++) {
+            if (isPalindrome(i) && isPrime(i)) {
+                count++;
+                System.out.print(i);
+                if (count % 10 == 0) {
+                    System.out.println();
+                } else {
+                    System.out.print(" ");
+                }
+            }
+        }
+        stopWatch.stop();
         System.out.println("PalindromePrime created.");
         System.out.println("The palindromPrime stopwatch stoped.");
-        
-        
-        // System.out.printf("The palindromPrime time is %.1f milliseconds.",stopWatch.getElapsedTime());
-        }
-    }
 
+        System.out.printf("The palindromPrime time is %.1f milliseconds.",stopWatch.getElapsedTime());
+    }
+}
 
 class StopWatch {
     private long startTime;
@@ -112,4 +126,3 @@ class StopWatch {
         return (endTime - startTime) / 1000000.0;
     }
 }
-
