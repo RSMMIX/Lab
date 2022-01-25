@@ -22,7 +22,6 @@ public class Pro3_64010726 {
                     System.out.println("All " + i + "s on row " + j);
                 }
             }
-
         }
         if (noSame) {
             System.out.println("No same numbers on a row");
@@ -36,7 +35,6 @@ public class Pro3_64010726 {
                     System.out.println("All " + i + "s on column " + j);
                 }
             }
-
         }
         if (noSame) {
             System.out.println("No same numbers on a column");
@@ -48,7 +46,6 @@ public class Pro3_64010726 {
                 noSame = false;
                 System.out.println("All " + i + "s on the superdiagonal");
             }
-
         }
         if (noSame) {
             System.out.println("No same numbers on the superdiagonal");
@@ -60,7 +57,6 @@ public class Pro3_64010726 {
                 noSame = false;
                 System.out.println("All " + i + "s on the diagonal");
             }
-
         }
         if (noSame) {
             System.out.println("No same numbers on the diagonal");
@@ -105,5 +101,4 @@ public class Pro3_64010726 {
         }
         return true;
     }
-
 }

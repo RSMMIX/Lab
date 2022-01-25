@@ -26,9 +26,8 @@ public class Pro1_64010726 {
         int count = 0;
         for (int i = 0; count < 100; i++) {
             if(isPalindrome(i) && isPrime(i)){
-                count++;
                 System.out.print(i);
-                if (count % 10 == 0) {
+                if (++count % 10 == 0) {
                     System.out.println();
                 }
                 else{
