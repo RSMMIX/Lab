@@ -11,6 +11,15 @@ public class Pro2_64010726 {
         private String[] students;
         private int sumStudents;
 
+
+        public String[] getStudents() {
+            return getStudents();
+        }
+
+        public int sumStudents(){
+            return sumStudents();
+        }
+        
         public void dropStudent(){
 
         }
