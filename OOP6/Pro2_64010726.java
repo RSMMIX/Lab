@@ -11,7 +11,9 @@ public class Pro2_64010726 {
         private String[] students;
         private int sumStudents;
 
-
+        public void addStudent() {
+            
+        }
         public String[] getStudents() {
             return getStudents();
         }
@@ -19,7 +21,7 @@ public class Pro2_64010726 {
         public int sumStudents(){
             return sumStudents();
         }
-        
+
         public void dropStudent(){
 
         }
