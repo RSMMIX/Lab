@@ -79,7 +79,7 @@ public class Pro3_64010726 {
 
         stopWatch.start();
         int count = 0;
-        for (int i = 0; count < 1000; i++) {
+        for (int i = 0; count < 100; i++) {
             if (isPalindrome(i) && isPrime(i)) {
                 count++;
                 System.out.print(i);

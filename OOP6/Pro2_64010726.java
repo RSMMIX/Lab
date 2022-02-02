@@ -1,3 +1,4 @@
+import java.io.StreamCorruptedException;
 import java.util.*;
 
 public class Pro2_64010726 {
@@ -7,19 +8,27 @@ public class Pro2_64010726 {
     }
 
     class Course {
-        private String name;
-        private String[] students;
-        private int sumStudents;
+        private String courseName;
+        private String[] students = new String[100];
+        private int numberOfStudents;
 
+        public Course(String courString){
+            this.courseName = courseName;
+        }
         public void addStudent() {
-            
+            students[numberOfStudents] = students;
+            numberOfStudents++;
         }
         public String[] getStudents() {
-            return getStudents();
+            return students;
         }
 
-        public int sumStudents(){
-            return sumStudents();
+        public int getNumberOfStudents(){
+            return numberOfStudents;
+        }
+
+        public String getCourseString(){
+            return courseName;
         }
 
         public void dropStudent(){
