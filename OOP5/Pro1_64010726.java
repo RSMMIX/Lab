@@ -29,11 +29,11 @@ class Account{
 
 
     public double getMonthlyInterestRate(){
-        return (annualInterestRate / 100) / 12; 
+        return (annualInterestRate / 12); 
     }
 
     public double getMonthlyInterest(){
-        return balance * getMonthlyInterestRate();
+        return balance * getMonthlyInterestRate() /100;
     }
 
     public void withdraw(double amount){
