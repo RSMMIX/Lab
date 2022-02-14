@@ -54,7 +54,6 @@ public class Pro4_64010726 {
                 (brackets[s][3] - brackets[s][2]) * rates[3] +
                 (brackets[s][4] - brackets[s][3]) * rates[4] +
                 (income - brackets[s][4]) * rates[5];
-
     }
 
 }
