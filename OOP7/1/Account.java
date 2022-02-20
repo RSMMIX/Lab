@@ -1,23 +1,16 @@
 import java.util.*;
 class Account {
-    private String name;
-    private int id;
-    private double balance;
-    private double annualInterestRate;
-    private Date dateCreated;
+
+    protected int id;
+    protected double balance;
+    protected double annualInterestRate;
+    protected Date dateCreated;
 
     public Account() {
         dateCreated = new Date();
     }
 
     public Account(int id, double balance) {
-        this.id = id;
-        this.balance = balance;
-        dateCreated = new Date();
-    }
-
-    public Account(String name, int id, double balance) {
-        this.name = name;
         this.id = id;
         this.balance = balance;
         dateCreated = new Date();
@@ -43,6 +36,10 @@ class Account {
         return annualInterestRate;
     }
 
+    public Date getDateCreated() {
+        return dateCreated;
+    }
+
     public void setAnnualInterestRate(double annualInterestRate) {
         this.annualInterestRate = annualInterestRate;
     }
@@ -63,4 +60,13 @@ class Account {
         balance += amount;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " id='" + getId() + "'" +
+            ", balance='" + getBalance() + "'" +
+            ", annualInterestRate='" + getAnnualInterestRate() + "'" +
+            ", dateCreated='" + getDateCreated() + "'" +
+            "}";
+    }
 }

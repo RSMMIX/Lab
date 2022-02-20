@@ -45,7 +45,6 @@ public class Pro6_64010726 {
             }
         }
 
-        .
     }
 }
 
