@@ -57,6 +57,7 @@ class Account {
     public ArrayList<Transaction> getTransactions() {
         return transactions;
     }
+    
     public void setAnnualInterestRate(double annualInterestRate) {
         this.annualInterestRate = annualInterestRate;
     }

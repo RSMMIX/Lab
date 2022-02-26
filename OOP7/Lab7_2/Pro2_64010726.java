@@ -1,9 +1,8 @@
 import java.util.*;
 public class Pro2_64010726 {
     public static void main(String[] args) {
-        Account acc = new Account(1122,1000);
+        Account acc = new Account("George",1122,1000);
         acc.setAnnualInterestRate(1.5);
-        acc.setName("George");
         acc.deposit(30);
         acc.deposit(40);
         acc.deposit(50);
@@ -19,7 +18,7 @@ public class Pro2_64010726 {
         System.out.println("Date                              Type           Amount         Balance");
        
         for (Transaction t : acc.getTransactions()) {
-            System.out.println(t.getDate() + "       " + t.getType() + "              " + t.getAmount() + "          " + t.getBalance());
+         System.out.println(t.getDate() + "       " + t.getType() + "              " + t.getAmount() + "          " + t.getBalance());
         }
     }
 }

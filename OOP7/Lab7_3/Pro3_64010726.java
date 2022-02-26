@@ -1,6 +1,6 @@
 public class Pro3_64010726 {
     public static void main(String[] args) {
-        String name = "Moji", address = "Moji", phoneNumber = "0990506733", emailAddress = "64010726@kmitl.ac.th";
+        String name = "Moji", address = "RNP", phoneNumber = "0990506733", emailAddress = "64010726@kmitl.ac.th";
         Person p = new Person(name, address, phoneNumber, emailAddress);
         Student s = new Student(name, address, phoneNumber, emailAddress, Student.FRESHMAN);
         Employee e = new Employee(name, address, phoneNumber, emailAddress, "KMITL", 100000);
