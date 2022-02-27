@@ -15,5 +15,6 @@ public class Pro1_64010726 {
         triangle.setFilled(input.nextBoolean());
 
         System.out.println(triangle);
+
     }
 }
