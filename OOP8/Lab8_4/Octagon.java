@@ -8,7 +8,6 @@ public class Octagon extends GeometricObject implements Cloneable, Comparable<Oc
         this.side = side;
     }
 
-
     public double getSide() {
         return this.side;
     }
@@ -16,7 +15,6 @@ public class Octagon extends GeometricObject implements Cloneable, Comparable<Oc
     public void setSide(double side) {
         this.side = side;
     }
-
 
     @Override
     public int compareTo(Octagon o) {

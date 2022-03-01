@@ -13,8 +13,7 @@ public class Pro1_64010726 {
 
         System.out.println("Is the triangle filled? ");
         triangle.setFilled(input.nextBoolean());
-
+        
         System.out.println(triangle);
-
     }
 }

@@ -7,5 +7,4 @@ public class Pro4_64010726 {
         Octagon oc2 = oc1.clone();
         System.out.println("Comparable: " + oc1.compareTo(oc2));
     }
-    
 }

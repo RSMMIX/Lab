@@ -25,7 +25,7 @@ public abstract class GeometricObject {
     public boolean isFilled() {
         return this.filled;
     }
-
+    
     public boolean getFilled() {
         return this.filled;
     }

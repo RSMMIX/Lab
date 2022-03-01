@@ -36,7 +36,7 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle> 
             return 0;
         }
     }
-
+    
     @Override
     public double getArea() {
         return width * height;
