@@ -6,24 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Loan_GUI",
-            "request": "launch",
-            "mainClass": "Loan_GUI",
-            "projectName": "OOP9_ac32cf4c"
-        },
-        {
-            "type": "java",
-            "name": "Launch Pro1_64010726",
-            "request": "launch",
-            "mainClass": "Pro1_64010726",
-            "projectName": "OOP9_ac32cf4c",
-            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display_images",
+            "request": "launch",
+            "mainClass": "Display_images",
+            "projectName": "Lab_09_01_fd153f39",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
