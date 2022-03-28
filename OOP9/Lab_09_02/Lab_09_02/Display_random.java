@@ -1,22 +1,28 @@
-import javax.swing.*;
-import java.awt.*;
-import java.util.Random;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.scene.layout.GridPane;
+import javafx.scene.control.TextField;
+import javafx.geometry.Pos;
 
-public class Display_random {
+public class Display_random extends Application {
     public static void main(String[] args) {
-        Random random = new Random();
-        JFrame f = new JFrame("Random Matrix");
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(10, 10));
-        for(int i = 0; i < 10; ++i) {
-            for(int j = 0; j < 10; ++j) {
-                panel.add(new TextField(random.nextInt(2) + ""));
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) {
+        GridPane pane = new GridPane();
+        for (int i = 0; i < 10; ++i) {
+            for (int j = 0; j < 10; ++j) {
+                TextField text = new TextField(String.valueOf((int) (Math.random() * 2)));
+                text.setAlignment(Pos.CENTER);
+                pane.add(text, i, j);
             }
         }
-        panel.setBounds(10, 10, 200, 200);
-        f.add(panel);
-        f.setSize(235, 255);
-        f.setLayout(null);
-        f.setVisible(true);
+        Scene scene = new Scene(pane, 235, 255);
+        primaryStage.setTitle("Display_random");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }
