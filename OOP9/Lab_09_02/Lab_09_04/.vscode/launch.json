@@ -4,14 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "java",
             "name": "Launch Racing_car",
             "request": "launch",
             "mainClass": "Racing_car",
-            "projectName": "Lab_09_04_fd153f3c",
+            "projectName": "Lab_09_04_a0d1614b",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Racing_car",
+            "request": "launch",
+            "mainClass": "Racing_car",
+            "projectName": "Lab_09_04_fd153f3c"
         },
         {
             "type": "java",

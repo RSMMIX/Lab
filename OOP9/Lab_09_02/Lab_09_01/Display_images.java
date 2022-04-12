@@ -24,6 +24,5 @@ public class Display_images extends Application {
 		primaryStage.setTitle("Display_images");
 		primaryStage.setScene(scene);
 		primaryStage.show();
-
 	}
 }

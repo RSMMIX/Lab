@@ -6,31 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch fan",
+            "name": "Launch LoanCalculator",
             "request": "launch",
-            "mainClass": "fan",
-            "projectName": "Lab_09_06_a0d1614d",
+            "mainClass": "LoanCalculator",
+            "projectName": "OOP11_f1b68bbe",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "Launch fan",
-            "request": "launch",
-            "mainClass": "fan",
-            "projectName": "Lab_09_06_fd153f3e",
         },
         {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch Random_time",
-            "request": "launch",
-            "mainClass": "Random_time",
-            "projectName": "Lab_09_03_fd153f3b"
         }
     ]
 }

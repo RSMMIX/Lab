@@ -19,5 +19,4 @@ public class Pro1_64010726 {
         }
         input.close();
     }
-    
 }

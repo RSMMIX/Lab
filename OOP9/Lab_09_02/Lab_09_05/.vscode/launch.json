@@ -9,8 +9,15 @@
             "name": "Launch fan",
             "request": "launch",
             "mainClass": "fan",
-            "projectName": "Lab_09_05_fd153f3d",
+            "projectName": "Lab_09_05_a0d1614c",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch fan",
+            "request": "launch",
+            "mainClass": "fan",
+            "projectName": "Lab_09_05_fd153f3d"
         },
         {
             "type": "java",
